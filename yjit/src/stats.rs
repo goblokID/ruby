@@ -393,7 +393,8 @@ make_counters! {
     send_send_null_mid,
     send_send_null_cme,
     send_send_nested,
-    send_send_getter,
+    send_send_attr_reader,
+    send_send_attr_writer,
     send_iseq_has_rest_and_captured,
     send_iseq_has_kwrest_and_captured,
     send_iseq_has_rest_and_kw_supplied,
@@ -581,6 +582,11 @@ make_counters! {
     num_throw_break,
     num_throw_retry,
     num_throw_return,
+
+    num_lazy_frame_check,
+    num_lazy_frame_push,
+    lazy_frame_count,
+    lazy_frame_failure,
 
     iseq_stack_too_large,
     iseq_too_long,
